@@ -32,9 +32,9 @@ end
 
 function M.restore()
   if vim.b.was_fcitx_on then
-    fcitx.turn_on()
+    M.turn_on()
   else
-    fcitx.turn_off()
+    M.turn_off()
   end
 end
 
