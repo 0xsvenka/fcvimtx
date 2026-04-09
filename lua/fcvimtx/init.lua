@@ -8,8 +8,6 @@ if vim.fn.executable('fcitx5-remote') == 1 then
 elseif vim.fn.executable('fcitx-remote') == 1 then
   fcitx_cmd = 'fcitx-remote'
 else
-  vim.notify('fcitx5-remote or fcitx-remote executable not found',
-      vim.log.levels.ERROR)
   return M
 end
 
